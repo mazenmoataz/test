@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <hr>
+      <form action="connection.php" method="POST">
+        <h1>Solve with True Honesty</h1>
+        <section class="firstname">
+        	<label for="firstname">Your First Name?</label>
+        	<br>
+        	<input type="text" id="firstname" name="firstname" required>
+        </section>
+        <hr>
+        <section class="lastname">
+        	<label for="lastname">Your First Name?</label>
+        	<br>
+        	<input type="text" id="lastname" name="lastname" required>
+        </section>
+        <hr>
+        <section class="knowness">
+          <label for="knowness">How well do you know me?</label>
+          <br>
+          <span>barely even know you</span>
+          <input type="range" name="knowness" id="knowness" value="3" min="1" max="10" required>
+          <span>Verrrrry Well</span>
+        </section>
+        <hr>
+        <section class="funny">
+          <label for="funny">On a scale of 1 to 10 how funny am I?</label>
+          <br>
+          <span>UR AN EGG</span>
+          <input type="range" name="funny" id="funny" value="1" min="1" max="10" required>
+          <span>Verrrrry Funny</span>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="5" cols="40" required></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+        
+      </form>
+    </section>
+  </body>
+</html>
